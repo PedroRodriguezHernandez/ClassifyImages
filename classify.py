@@ -8,7 +8,7 @@ def move_resize_images(source_folder, destination_folder, percentage, new_size):
 
     # List all images in the source folder
     all_images = os.listdir(source_folder)
-    total_images = 100 #There are 100 images in the original dataset
+    total_images = 160 #There are 160 or more images in the original dataset
 
     # Calculate the number of images to move
     num_images_to_move = int(total_images * percentage)
