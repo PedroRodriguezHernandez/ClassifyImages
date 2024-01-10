@@ -9,8 +9,7 @@ def resize_images(image_path, new_size):
         img_resized = img.resize(new_size)
 
         # Make sure it is RGB type
-        if img_resized.mode == 'RGBA' or img_resized.mode == 'P':
-            img_resized = img_resized.convert('RGB')
+        img_resized = img_resized.convert('RGB')
 
         return img_resized
     except Exception as e:
